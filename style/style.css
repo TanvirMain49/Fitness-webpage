@@ -1,141 +1,334 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-body{
-    font-family: "Inter", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
-*{
-    margin: 0;
-    padding: 0;
-    
+body {
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: white;
 }
-body{
-    background-color: black;
-    color: white;
+header {
+  background: linear-gradient(180deg, #272727 0%, rgba(119, 119, 119, 0) 100%);
 }
-header{
-    margin: 57px 190px 100px 190px;
+main{
+    margin: 0 12.375rem;
 }
-.fit{
-    color: rgba(230, 83, 60, 1);
-    font-size: 2.25rem;
-    font-weight: 800;
-}
-p{
-    color: rgba(255, 255, 255, 0.5);
 
+.container{
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.para{
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.fit {
+  color: rgba(230, 83, 60, 1);
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-top: 3.56rem;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* nav-bar section */
-.navbar{
-    display: flex;
-    justify-content: space-between;
+.header-section {
+  height: 700px;
+  margin: 0rem 12.313rem;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
-.navbar-option{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    font-size: 1.125rem;
-    font-weight: 400;
-    text-align: center;
+.navbar-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 3.56rem;
 }
-.navbar-option-home{
-    border-radius: 46px;
-    padding: 8px 20px;
-    gap: 10px;
-    font-size: 18px;
-    font-weight: 800;
-    background-color: rgba(230, 83, 60, 1);
-    color: white;
-    border: none;
+.navbar-option-home {
+  border-radius: 46px;
+  padding: 8px 20px;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: rgba(230, 83, 60, 1);
+  color: white;
+  border: none;
 }
 
 /* banner section */
-.banner{
-    margin-top: 96px;
-    display: flex;
-    gap: 2rem;
-    /* background-color: red; */
+.banner {
+  margin-top: 6rem;
+  display: flex;
+  gap: 2rem;
 }
 
-.banner-container{
-    width: 600px;
-    height: 440px;
-    text-align: start;
+.banner-container {
+  width: 37.5rem;
+  height: 27.5rem;
+  text-align: start;
 }
 
-.banner-title{
-    width: 32.5rem;
-    height: 17.6rem;
-    font-weight: 900;
-    font-size: 4.9rem;
-    margin-bottom: 28px;
+.banner-title {
+  width: 32.5rem;
+  height: 17.6rem;
+  font-weight: 900;
+  font-size: 4.9rem;
+  margin-bottom: 1.75rem;
 }
 
-.banner-description{
-    height: 3rem;
-    font-weight: 400;
-    font-size: 1rem;  
-    margin-bottom: 28px;  
+.banner-description {
+  height: 3rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 28px;
 }
 
-.btn-primary{
-    width: 14rem;
-    height: 3.38rem;
-    padding: 16px 40px;
-    border-radius: 46px;
-    background-color:  rgba(230, 83, 60, 1);
-    color: white;
-    font-size: 18px;
-    font-weight: 600; 
-    line-height: 22px;   
+.btn-primary {
+  width: 14rem;
+  height: 3.38rem;
+  padding: 16px 40px;
+  border-radius: 46px;
+  background-color: rgba(230, 83, 60, 1);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
 }
 
+.btn-secend {
+  width: 14rem;
+  height: 3.38rem;
+  padding: 16px 40px;
+  border-radius: 46px;
+  background-color: rgb(16, 15, 15);
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
 
 .banner-cards {
-    position: relative;
-    width: 300px;
-    height: 500px;
+  position: relative;
+  width: 300px;
+  height: 500px;
 }
 
 .image-container {
-    position: relative;
+  position: relative;
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    margin-left: 170px;
+  width: 100%;
+  height: auto;
+  margin-left: 170px;
 }
 
 .overlay {
-    position: absolute;
-    color: white;
-    background: rgba(48, 48, 48, 0.54);
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    width: 206px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  color: white;
+  background: rgba(48, 48, 48, 0.54);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 206px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .overlay-top-right {
-    top: 100px;
-    right: -270px;
-
+  top: 100px;
+  right: -270px;
 }
 
 .overlay-bottom-left {
-    bottom: 20px;
-    left: 40px;
-    
+  bottom: 20px;
+  left: 40px;
 }
 
-#span{
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 40px;
-    color: rgba(255, 255, 255, 1);
-    ;
+#span {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+.bar {
+  display: none;
+}
+
+/* habit section start */
+.habit{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.habit-content{
+    width: 41rem;
+    margin: 0 auto;
+}
+
+.habit-content h1{
+    margin-bottom: 14px;
+}
+.habit-content p{
+    margin-bottom: 58px;
+}
+
+.habit-images{
+    display: flex;
+    gap: 40px;
+}
+
+.card{
+    width: 15rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.card p{
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 14px;
+    text-align: center;
+}
+
+.card img{
+    width:11.25rem;
+    clip-path: circle();
+}
+
+
+
+
+
+
+
+
+/* Responsive section start*/
+
+@media screen and (max-width: 576px) {
+  .header-section {
+    margin: 0px 16px;
+  }
+
+  .navbar-option {
+    display: none;
+  }
+  .bar {
+    display: block;
+    margin-left: 170px;
+    margin-top: 60px;
+    font-size: 26px;
+  }
+
+  .banner {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .banner-container {
+    width: 24rem;
+    height: 70%;
+  }
+
+  .banner-container h1 {
+    font-size: 26px;
+    padding: auto;
+    width: 18rem;
+    height: 10%;
+    margin-bottom: 36px;
+  }
+  .banner-container p {
+    font-size: 12px;
+    width: 18rem;
+  }
+  .banner-btn {
+    display: flex;
+    width: 87%;
+    gap: 16px;
+  }
+
+  .btn-primary,
+  .btn-secend {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .overlay{
+    padding: 5px;
+    width: 60%;
+  }
+  .overlay-bottom-left {
+    margin-bottom: 100px;
+    left: 10px;
+    width: 30%;
+    height: 74px;
+  }
+  .overlay-top-right {
+    top: 150px;
+    right: 180px;
+    width: 30%;
+    height: 74px;
+  }
+
+  .banner-cards {
+    width: 500px;
+    margin-top: 20px;
+  }
+
+  .banner-cards img {
+    width: 60%;
+    height: 576px;
+    padding-left: 40px;
+    margin-left: 0px;
+  }
+
+  main{
+    margin: 0px 12px;
+  }
+
+  .habit{
+    margin-top: 340px;
+    margin-left: 20px;
+  }
+
+  .habit-content{
+    width: 320px;
+  }
+  .habit-content h1{
+    font-size: 30px;
+    text-align: start;
+
+  }
+
+  .habit-images{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+
 }
