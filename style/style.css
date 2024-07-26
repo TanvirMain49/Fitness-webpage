@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* shared */
 body {
   font-family: "Inter", sans-serif;
   background-color: black;
@@ -45,14 +45,20 @@ p {
 /* nav-bar section */
 .header-section {
   height: 700px;
-  margin: 0rem 12.313rem;
+  margin: 0rem 190px;
 }
+
 
 .navbar {
   display: flex;
   justify-content: space-between;
 }
 .navbar-option {
+  width: 37.7%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 46px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 8px 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,6 +67,7 @@ p {
   font-weight: 400;
   text-align: center;
   margin-top: 3.56rem;
+  cursor: pointer;
 }
 .navbar-option-home {
   border-radius: 46px;
@@ -88,9 +95,8 @@ p {
 
 .banner-title {
   width: 32.5rem;
-  height: 17.6rem;
   font-weight: 900;
-  font-size: 4.9rem;
+  font-size: 78px;
   margin-bottom: 1.75rem;
 }
 
@@ -111,6 +117,7 @@ p {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
+  border: none;
 }
 
 .btn-secend {
@@ -124,6 +131,7 @@ p {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
+  border: none;
 }
 
 .banner-cards {
@@ -233,6 +241,7 @@ p {
     margin: 0 auto;
     padding: 46px 26px;
     border-radius: 18px;
+    margin-bottom: 6.25rem;
     
 }
 .run-container{
@@ -260,6 +269,65 @@ p {
     height: 340px;
     border-radius: 18px;
 }
+/* teams section */
+
+.teams-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3.2rem;
+}
+
+.teams-title{
+font-weight: 900;
+font-size: 3rem;
+}
+.teams-description{
+font-weight: 400;
+font-size: 1rem;
+line-height: 24px;
+letter-spacing: 0.3px;
+}
+.teams-img{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+
+}
+
+.teams-img img{
+  width: 21rem;
+  height: 16.8rem;
+  border-radius: 18px;
+  filter: brightness(70%);
+}
+
+.teams-card{
+  position: relative;
+  padding: 20px;
+}
+.member-title{
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.member-work{
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  ;
+
+}
 
 
 
@@ -272,37 +340,38 @@ p {
 
 @media screen and (max-width: 576px) {
     body{
-       width: 100%;
-    }
-    header{
+        margin-left: 0px ;
+        margin-right: 0px;
         width: 100%;
-        margin: auto;
     }
 
   .header-section {
     width: 90%;
-    margin-left: 12px;
-    margin-right: 16px;
+    margin-left: 12px; 
+
   }
 
   .navbar-option {
     display: none;
   }
+
   .bar {
     display: block;
     margin-right: 20px;
     margin-top: 60px;
     font-size: 26px;
-
   }
 
   .banner {
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    gap: 6px;
+    gap: 0px;
   }
   .banner-container {
     width: 100%;
-    height: 70%;
+    height: 80%;
+    margin-bottom: 16px;
   }
 
   .banner-container h1 {
@@ -311,6 +380,9 @@ p {
     width:100%;
     height: 10%;
     margin-bottom: 36px;
+  }
+  .banner-cards{
+    width: 353px;
   }
   .banner-container p {
     font-size: 12px;
@@ -327,6 +399,9 @@ p {
     font-size: 16px;
     padding: 10px;
   }
+  .image-container{
+    width: 353px;
+  }
 
   .overlay{
     padding: 5px;
@@ -339,22 +414,24 @@ p {
     height: 74px;
   }
   .overlay-top-right {
-    top: 180px;
-    right: 150px;
-    width: 30%;
+    top: 10px;
+    right: 139px;
+    width: 28%;
     height: 74px;
   }
 
   .banner-cards {
-    width: 500px;
+    width: 90%;
     margin-top: 20px;
+
   }
 
   .banner-cards img {
     width: 60%;
     height: 576px;
-    padding-left: 70px;
-    margin-left: 0px;
+    padding-left: 60px;
+    margin-left: 2px;
+    /* background-color: antiquewhite; */
   }
 
   main{
@@ -384,15 +461,17 @@ p {
   }
 
   .Run{
-    width: 90%;
+    width: 87%;
     flex-direction: column;
     gap: 16px;
+    margin-left: 6px;
   }
   .Run button{
     width: 100%;
   }
   .Run img{
-    width: 100%;
+    width: 324px;
+    height: 200px;
   }
 
   
