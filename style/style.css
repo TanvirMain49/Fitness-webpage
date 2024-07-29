@@ -811,34 +811,38 @@ footer hr {
   }
 
   .bmi-container {
-    margin-left: 20px;
+    margin-left: 1.25rem;
     width: 100%;
   }
   .bmi-container h3 {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   .bmi-container p {
-    font-size: 14px;
-    padding-right: 40px;
+    font-size: 0.875rem;
+    padding-right: 2.5rem;
+  }
+  .bmi-table{
+    margin-left: 1.25rem;
   }
   .bmi-calculator {
     flex-direction: column;
+    width: 100%;
   }
   .bmi-chart {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
   .calculate-bmi-container h4 {
-    font-size: 22px;
+    font-size: 1.374rem;
   }
   .calculate-bmi {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
   .calculate-bmi-container p {
-    font-size: 14px;
-    padding-right: 148px;
+    font-size: 0.875rem;
+    padding-right: 9.25rem;
   }
   .calculate button {
-    width: 224px;
+    width: 14rem;
     padding: 16px, 40px, 16px, 40px;
   }
 
@@ -846,18 +850,18 @@ footer hr {
     width: 190%;
   }
   #input-bmi {
-    width: 226%;
+    width: 194%;
   }
   .row-1 {
     display: flex;
-    width: 234%;
+    width: 200%;
   }
   .row-2 {
     display: flex;
-    width: 234%;
+    width: 200%;
   }
   #input-age {
-    width: 86%;
+    width: 76%;
   }
   .membership-container {
     margin-left: 10px;
@@ -875,6 +879,7 @@ footer hr {
   }
   .package {
     border-bottom: 1px solid gray;
+    margin-left: 20px;
   }
   footer {
     width: 100%;
@@ -882,7 +887,7 @@ footer hr {
   .footer {
     flex-direction: column;
     align-items: flex-end;
-    margin-left: 330px;
+    margin-left: 20.625rem;
   }
   .left-container {
     width: 310px;
@@ -906,8 +911,9 @@ footer hr {
     width: 99%;
   }
   #copy-right {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 1.25rem;
+    margin-left: 4.375rem;
     text-align: start;
   }
 }
+
