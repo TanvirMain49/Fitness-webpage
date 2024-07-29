@@ -13,7 +13,8 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, #272727 0%, rgba(119, 119, 119, 0) 100%);
+  background: linear-gradient(190deg, #272727 0%, rgba(119, 119, 119, 0) 100%);
+ 
 }
 
 .container {
@@ -870,7 +871,7 @@ footer hr {
 
   .membership-cards {
     margin-left: 10px;
-    grid-template-columns: repeat(1, 0.5fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .package {
     border-bottom: 1px solid gray;
@@ -887,6 +888,7 @@ footer hr {
     width: 310px;
     height: 130px;
     padding-left: 6px;
+    padding-top: 40px;
   }
   .left-container h3 {
     font-size: 52px;
