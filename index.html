@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <!-- header-section start -->
         <section class="header-section">
             <nav class="navbar">
                 <h1 class="fit"><i>Fitness</i></h1>
@@ -38,6 +39,9 @@
                <div class="banner-cards">
                 <div class="image-container">
                     <img src="images/Images 2.png" alt="Workout Image">
+                    <div class="round-box"> 
+                        <i class="fa-solid fa-play play"></i>  
+                    </div>
                     <div class="overlay overlay-top-right">
                         <p><span id="span">500+</span><br>Free Workout Videos</p>
                     </div>
@@ -48,6 +52,7 @@
             </div>
     
         </section>
+         <!-- header-section end -->
     </header>
 
     <main>
@@ -85,7 +90,9 @@
                 </div>
             </div>
         </section>
+        <!-- Habit section end -->
 
+        <!-- Run section start -->
         <section class="Run">
             <div class="run-container">
                 <h1>
@@ -100,11 +107,84 @@
                 <img src="images/run.jpg" alt="">
             </div>
         </section>
+        <!-- Run section end -->
 
+        <!-- bmi section start -->
         <section class="bmi">
+            <div class="bmi-container">
+                <h3 class="bmi-title">BMI Calculator</h3>
+                <p class="bmi-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
 
+            <div class="bmi-calculator">
+                <div class="bmi-chart">
+                    <h4>BMI Calculator Chart</h4>
+                    <table class="bmi-table">
+                        <thead>
+                            <tr>
+                                <td>BMI</td>
+                                <td>Weigh Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Below 18.5</td>
+                            </tr>
+                                <td>Below 18.5</td>
+                                <td>Below 18.5</td>
+                            <tr>
+                            </tr>
+                                <td>Below 18.5</td>
+                                <td>Below 18.5</td>
+                            <tr>
+                            </tr>
+                                <td>Below 18.5</td>
+                                <td>Below 18.5</td>
+                            <tr>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="calculate-bmi">
+                    <div class="calculate-bmi-container">
+                        <h4>Calculate your BMI</h4>
+                        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                    </div>
+
+                    <form action="">
+                        <div class="calculate">
+                            <div class="row-1">
+                                <input type="text" placeholder="Height/cm">
+                                <input type="text" placeholder="Weight/kg">
+                            </div>
+
+                            <div class="row-2">
+                                <input type="text" placeholder="Age" id="input-age">
+                                <select name="">
+                                    <option value="" disabled selected hidden>Sex</option>
+                                    <option value="Male" id="option">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div> 
+                            <select name="" id="input-bmi" >
+                                <option value="" disabled selected hidden>Select and activity factor</option>
+                            </select><br>
+                            <button class="btn-primary">Calculate</button>
+                        </div>
+                    </form>
+                    
+
+                </div>
+
+            </div>
         </section>
+        <!-- bmi section end -->
 
+    <!-- Teams section start -->
         <section class="teams">
             <div class="teams-container">
                 <h3 class="para teams-title">Meet Our Team</h3>
@@ -144,8 +224,94 @@
                 </div>
             </div>
         </section>
+        <!-- Teams section end -->
+
+        <!--Membership card section start  -->
+        <section class="membership">
+            <div class="membership-container">
+                <h3>Membership</h3>
+                <p>14 days unlimited free trial. No contract or credit card required</p>
+            </div>
+            
+            <div class="membership-cards">
+                <div class="package">
+                    <div class="package-container">
+                        <h6>Single Session</h6>
+                        <p>Membership</p>
+                        <p id="price">$15 <span>/package</span></p>
+                        <hr>
+                        <ul>
+                            <li>Exercise Farm Connect</li>
+                            <li>Lifestyle Man</li>
+                            <li>Access to Special Events</li>
+                            <li>One-Time Access</li>
+                        </ul>
+                    </div>
+                    <button class="btn-primary btn-1">Purchase Now</button>
+                </div>
+                <div class="package">
+                    <div class="package-container">
+                        <h6>10 Session Package</h6>
+                        <p>Membership</p>
+                        <p id="price">$10 <span>/package</span></p>
+                        <hr>
+                        <ul>
+                            <li>10 Sessions Access</li>
+                            <li>Exercise Farm Connect</li>
+                            <li>Group Training</li>
+                            <li>Basic Support</li>
+                        </ul>
+                    </div>
+                    <button class="btn-primary btn-2">Purchase Now</button>
+                </div>
+                <div class="package">
+                    <div class="package-container">
+                        <h6>40 Sessions Access</h6>
+                        <p>Membership</p>
+                        <p id="price">$7 <span>/package</span></p>
+                        <hr>
+                        <ul>
+                            <li>Unlimited Access for One Month</li>
+                            <li>Online Classes</li>
+                            <li>Community Forum Access</li>
+                            <li>Exclusive Newsletter</li>
+                        </ul>
+                    </div>
+                    <button class="btn-primary btn-3">Purchase Now</button>
+                </div>
+                
+            </div>
+        </section>
+        <!--Membership card section end  -->
 
     </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="left-container">
+                <h3><i>Fintness</i></h3>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+            </div>
+    
+            <div class="middle-container">
+                <h5>Get Started</h5>
+                <p>Service</p>
+                <p>Contact Us</p>
+                <p>Affiliate Program</p>
+                <p>About Us</p>
+            </div>
+    
+            <div class="right-container">
+                <h5>Get Started</h5>
+                <p>Fitness</p>
+                <p>Platform</p>
+                <p>Workout Libary</p>
+                <p>App Design</p>
+            </div>
+        </div>
+        <hr>
+        <p id="copy-right">All right are save @Fintness2024</p>
+    </footer>
     
 </body>
 </html>

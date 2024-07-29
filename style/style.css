@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 
 * {
   margin: 0;
@@ -15,20 +16,16 @@ header {
   background: linear-gradient(180deg, #272727 0%, rgba(119, 119, 119, 0) 100%);
 }
 
-main{
-    margin: 0 12rem;
+.container {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
 }
 
-.container{
-    text-align: center;
-    font-weight: 900;
-    font-size: 3rem;
-}
-
-.para{
-    text-align: center;
-    font-weight: 400;
-    font-size: 0.9rem;
+.para {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 .fit {
@@ -47,7 +44,6 @@ p {
   height: 700px;
   margin: 0rem 190px;
 }
-
 
 .navbar {
   display: flex;
@@ -69,6 +65,7 @@ p {
   margin-top: 3.56rem;
   cursor: pointer;
 }
+
 .navbar-option-home {
   border-radius: 46px;
   padding: 8px 20px;
@@ -78,6 +75,10 @@ p {
   background-color: rgba(230, 83, 60, 1);
   color: white;
   border: none;
+  transition: all ease 0.5s;
+}
+.navbar-option-home:hover {
+  box-shadow: 5px 5px 0px rgb(196, 196, 196);
 }
 
 /* banner section */
@@ -99,6 +100,11 @@ p {
   font-size: 78px;
   margin-bottom: 1.75rem;
 }
+.banner-title span {
+  font-family: "Miama", sans-serif;
+  font-weight: 900;
+  font-size: 7rem;
+}
 
 .banner-description {
   height: 3rem;
@@ -118,6 +124,7 @@ p {
   font-weight: 600;
   line-height: 22px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-secend {
@@ -132,6 +139,9 @@ p {
   font-weight: 600;
   line-height: 22px;
   border: none;
+  border: 1px solid gray;
+  margin-left: 16px;
+  cursor: pointer;
 }
 
 .banner-cards {
@@ -148,6 +158,20 @@ p {
   width: 100%;
   height: auto;
   margin-left: 170px;
+}
+.round-box {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: rgb(237, 40, 9);
+  position: absolute;
+  bottom: 45px;
+  right: 190px;
+}
+.play {
+  position: absolute;
+  bottom: 17px;
+  right: 18px;
 }
 
 .overlay {
@@ -167,8 +191,12 @@ p {
 }
 
 .overlay-bottom-left {
+  width: 180px;
   bottom: 20px;
   left: 40px;
+}
+.overlay-bottom-left p {
+  margin-left: 70px;
 }
 
 #span {
@@ -182,96 +210,215 @@ p {
 }
 
 /* habit section start */
-.habit{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.habit {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.habit-content{
-    width: 41rem;
-    margin: 0 auto;
-}
-
-.habit-content h1{
-    margin-bottom: 14px;
-}
-.habit-content p{
-    margin-bottom: 58px;
+.habit-content {
+  width: 41rem;
+  margin: 0 auto;
 }
 
-.habit-images{
-    display: flex;
-    gap: 40px;
+.habit-content h1 {
+  margin-bottom: 14px;
+}
+.habit-content p {
+  margin-bottom: 58px;
 }
 
-.card{
-    width: 15rem;
-    height: 16rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.habit-images {
+  margin: 0 12rem;
+  display: flex;
+  gap: 40px;
 }
 
-.card h4{
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 16px;
+.card {
+  width: 15rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.card p{
-    margin-top: 6px;
-    font-size: 14px;
-    font-weight: 14px;
-    text-align: center;
+.card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 16px;
 }
 
-.card img{
-    width:11.25rem;
-    clip-path: circle();
+.card p {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 14px;
+  text-align: center;
+}
+
+.card img {
+  width: 11.25rem;
+  clip-path: circle();
 }
 
 /* run section start */
-.Run{
-    width: 856px;
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-    align-items: center;
-    background-color: rgba(34, 34, 34, 1);
-    margin: 0 auto;
-    padding: 46px 26px;
-    border-radius: 18px;
-    margin-bottom: 6.25rem;
-    
+.Run {
+  width: 1090px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 1);
+  margin: 0 auto;
+  padding: 36px 2px;
+  border-radius: 18px;
+  margin-bottom: 6.25rem;
 }
-.run-container{
-    width: 20rem;
-    height: 20rem;
-    text-align: start;
-}
-
-.run-container h1{
-    font-size: 36px;
-    font-weight: 900;
-    margin-bottom: 26px;
+.run-container {
+  width: 26rem;
+  height: 20rem;
+  text-align: start;
+  margin-right: 20px;
 }
 
-.run-container p{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-    margin-bottom: 40px;
+.run-container h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 26px;
 }
 
-.run-image img{
-    width: 400px;
-    height: 340px;
-    border-radius: 18px;
+.run-container p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-bottom: 40px;
 }
+
+.run-image img {
+  width: 400px;
+  height: 312px;
+  object-fit: none;
+  object-position: 66% 33%;
+  border-radius: 18px;
+}
+
+/* bmi section start */
+.bmi {
+  margin-bottom: 88px;
+}
+
+.bmi-container {
+  margin: 76px 356px 90px 486px;
+}
+.bmi-container h3 {
+  font-size: 2.85rem;
+  font-weight: 900;
+  margin-bottom: 22px;
+}
+
+.bmi-container p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.bmi-calculator {
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+}
+
+.bmi-chart h4 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.bmi-table {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.bmi-table td {
+  border: 1px solid gray;
+  padding: 13px 70px 18px 16px;
+}
+.bmi-table thead td {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.bmi-table tbody td {
+  font-weight: 400;
+  font-size: 0.725rem;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.bmi-calculator {
+  display: flex;
+  justify-content: space-between;
+}
+.bmi-chart {
+  margin-left: 220px;
+  margin-top: 48px;
+}
+.bmi-chart h4 {
+  margin-bottom: 52px;
+}
+
+.calculate-bmi {
+  margin-right: 186px;
+}
+.calculate-bmi-container {
+  margin-top: 48px;
+  width: 500px;
+}
+.calculate-bmi-container h4 {
+  font-size: 1.825rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.calculate-bmi-container p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+.calculate {
+  margin-top: 16px;
+  margin-right: 20px;
+}
+.calculate input {
+  width: 17.66rem;
+  height: 3rem;
+  border: none;
+  border-radius: 8px;
+  padding-left: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 12px;
+  margin-right: 12px;
+}
+.calculate select {
+  width: 18.72rem;
+  height: 3rem;
+  border: none;
+  border-radius: 8px;
+  padding-left: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 12px;
+  margin-right: 12px;
+}
+.row-1 {
+  display: block;
+}
+#input-bmi {
+  width: 38.35rem;
+  margin-bottom: 36px;
+}
+.calculate button {
+  margin-bottom: 52px;
+}
+
 /* teams section */
 
-.teams-container{
+.teams-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,38 +426,38 @@ p {
   gap: 1rem;
   margin-bottom: 3.2rem;
 }
-
-.teams-title{
-font-weight: 900;
-font-size: 3rem;
+.teams-title {
+  font-weight: 900;
+  font-size: 3rem;
 }
-.teams-description{
-font-weight: 400;
-font-size: 1rem;
-line-height: 24px;
-letter-spacing: 0.3px;
+.teams-description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 0.3px;
 }
-.teams-img{
-  width: 100%;
+.teams-img {
+  width: 72%;
+  margin-left: 220px;
+  margin-right: 60px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 18px;
-
 }
 
-.teams-img img{
-  width: 21rem;
-  height: 16.8rem;
+.teams-img img {
+  width: 20rem;
+  height: 18rem;
   border-radius: 18px;
   filter: brightness(70%);
 }
 
-.teams-card{
+.teams-card {
   position: relative;
-  padding: 20px;
+  padding: 16px;
 }
-.member-title{
+.member-title {
   position: absolute;
   top: 70%;
   left: 10%;
@@ -318,46 +465,203 @@ letter-spacing: 0.3px;
   font-weight: 900;
 }
 
-.member-work{
+.member-work {
   position: absolute;
   top: 80%;
   left: 10%;
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
-  ;
-
 }
 
+/* member section start */
 
+.membership-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 0.24fr);
+  gap: 16px;
+  margin-left: 230px;
+}
+.membership-container {
+  text-align: start;
+  margin-left: 230px;
+  margin-top: 86px;
+  margin-bottom: 56px;
+}
+.membership-container h3 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+.membership-container p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
 
+.package {
+  width: 350px;
+  height: 640px;
+  background: linear-gradient(180deg, #272727 0%, rgba(119, 119, 119, 0) 100%);
+  border-radius: 18px;
+  border-bottom: 1px solid rgb(78, 78, 78);
+  margin-bottom: 46px;
+}
+.package-container {
+  margin-left: 20px;
+}
+.package-container span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.package h6 {
+  font-size: 26px;
+  font-weight: 600;
+  padding-top: 34px;
+  margin-bottom: 6px;
+}
+.package p {
+  color: white;
+  margin-bottom: 12px;
+}
+.package ul {
+  margin-left: 20px;
+}
+.package li {
+  margin-bottom: 26px;
+}
+.package button {
+  margin-top: 96px;
+  margin-left: 52px;
+}
 
+.btn-1 {
+  transition: all ease 0.5s;
+}
+.btn-1:hover {
+  box-shadow: 5px 5px 0px 5px rgb(244, 150, 135);
+}
+.btn-2 {
+  transition: all ease 0.5s;
+}
+.btn-2:hover {
+  box-shadow: 5px 5px 0px 5px rgb(244, 150, 135);
+}
+.btn-3 {
+  transition: all ease 0.5s;
+}
+.btn-3:hover {
+  box-shadow: 5px 5px 0px 5px rgb(244, 150, 135);
+}
 
-
-
+#price {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 76px;
+}
+hr {
+  width: 80%;
+  margin-bottom: 46px;
+}
+/* footer */
+footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 66px 190px 80px 190px;
+}
+.left-container {
+  width: 452px;
+  height: 200px;
+}
+.left-container h3 {
+  color: rgba(230, 83, 60, 1);
+  font-size: 66px;
+  font-weight: 900;
+}
+.left-container p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+.middle-container {
+  width: 200px;
+  height: 250px;
+  margin-left: 112px;
+  margin-top: 66px;
+}
+.middle-container h5 {
+  text-align: start;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  margin-bottom: 40px;
+}
+.middle-container p {
+  text-align: start;
+  margin-bottom: 20px;
+}
+.right-container {
+  width: 200px;
+  height: 250px;
+  margin-left: 136px;
+  margin-top: 66px;
+}
+.right-container h5 {
+  text-align: start;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  margin-bottom: 40px;
+}
+.right-container p {
+  text-align: start;
+  margin-bottom: 20px;
+}
+footer hr {
+  width: 75%;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+#copy-right {
+  text-align: center;
+  padding-bottom: 32px;
+  margin-top: 50px;
+}
 
 /* Responsive section start*/
 
 @media screen and (max-width: 576px) {
-    body{
-        margin-left: 0px ;
-        margin-right: 0px;
-        width: 100%;
-    }
+  body {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    overflow: hidden;
+  }
+  header {
+    width: 100%;
+  }
 
   .header-section {
     width: 90%;
-    margin-left: 12px; 
-
+    margin-left: 12px;
   }
-
   .navbar-option {
     display: none;
   }
 
   .bar {
     display: block;
-    margin-right: 20px;
+    margin-right: 2px;
     margin-top: 60px;
     font-size: 26px;
   }
@@ -366,7 +670,7 @@ letter-spacing: 0.3px;
     width: 100%;
     height: 100%;
     flex-direction: column;
-    gap: 0px;
+    gap: 1px;
   }
   .banner-container {
     width: 100%;
@@ -377,11 +681,14 @@ letter-spacing: 0.3px;
   .banner-container h1 {
     font-size: 26px;
     padding: auto;
-    width:100%;
+    width: 100%;
     height: 10%;
-    margin-bottom: 36px;
+    margin-bottom: 66px;
   }
-  .banner-cards{
+  .banner-title span {
+    font-size: 36px;
+  }
+  .banner-cards {
     width: 353px;
   }
   .banner-container p {
@@ -398,83 +705,207 @@ letter-spacing: 0.3px;
   .btn-secend {
     font-size: 16px;
     padding: 10px;
+    border: 1px solid gray;
   }
-  .image-container{
+  .image-container {
     width: 353px;
   }
-
-  .overlay{
+  .overlay {
     padding: 5px;
     width: 100%;
   }
   .overlay-bottom-left {
     margin-bottom: 100px;
     left: 10px;
-    width: 30%;
-    height: 74px;
+    width: 50%;
+    height: 64px;
   }
   .overlay-top-right {
     top: 10px;
-    right: 139px;
-    width: 28%;
+    right: 30px;
+    width: 45%;
     height: 74px;
+  }
+  .round-box {
+    bottom: 135px;
+    left: 30px;
   }
 
   .banner-cards {
     width: 90%;
     margin-top: 20px;
-
   }
 
   .banner-cards img {
     width: 60%;
-    height: 576px;
-    padding-left: 60px;
+    height: 530px;
+    padding-left: 80px;
     margin-left: 2px;
-    /* background-color: antiquewhite; */
   }
 
-  main{
-    width: 90%;
-    margin: 0px 12px;
-
-  }
-
-  .habit{
+  .habit {
+    width: 93%;
     margin-top: 340px;
     margin-left: 20px;
   }
 
-  .habit-content{
+  .habit-content {
     width: 320px;
   }
-  .habit-content h1{
+  .habit-content h1 {
     font-size: 30px;
     text-align: start;
-
   }
 
-  .habit-images{
+  .habit-images {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 175px;
   }
 
-  .Run{
-    width: 87%;
+  .Run {
+    width: 93%;
     flex-direction: column;
     gap: 16px;
-    margin-left: 6px;
+    margin: 0px 10px;
   }
-  .Run button{
+  .run-container {
+    width: 80%;
+  }
+  .run-container h1 {
+    font-size: 26px;
+    text-align: start;
+  }
+  .Run button {
     width: 100%;
   }
-  .Run img{
+  .Run img {
     width: 324px;
-    height: 200px;
+    object-fit: none;
+    object-position: 66% 33%;
   }
 
-  
+  .teams-img {
+    width: 94%;
+    margin-left: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6px;
+    margin: 0px 10px;
+  }
+  .teams-img img {
+    width: 100%;
+  }
+  .teams-container {
+    text-align: center;
+    width: 80%;
+    margin-left: 40px;
+  }
 
+  .teams-title {
+    font-size: 30px;
+  }
+  .teams-description {
+    font-size: 14px;
+  }
 
+  .bmi-container {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .bmi-container h3 {
+    font-size: 26px;
+  }
+  .bmi-container p {
+    font-size: 14px;
+    padding-right: 40px;
+  }
+  .bmi-calculator {
+    flex-direction: column;
+  }
+  .bmi-chart {
+    margin-left: 20px;
+  }
+  .calculate-bmi-container h4 {
+    font-size: 22px;
+  }
+  .calculate-bmi {
+    margin-left: 20px;
+  }
+  .calculate-bmi-container p {
+    font-size: 14px;
+    padding-right: 148px;
+  }
+  .calculate button {
+    width: 224px;
+    padding: 16px, 40px, 16px, 40px;
+  }
+
+  .calculate input {
+    width: 190%;
+  }
+  #input-bmi {
+    width: 226%;
+  }
+  .row-1 {
+    display: flex;
+    width: 234%;
+  }
+  .row-2 {
+    display: flex;
+    width: 234%;
+  }
+  #input-age {
+    width: 86%;
+  }
+  .membership-container {
+    margin-left: 10px;
+  }
+  .membership-container h3 {
+    font-size: 26px;
+  }
+  .membership-container p {
+    font-size: 14px;
+  }
+
+  .membership-cards {
+    margin-left: 10px;
+    grid-template-columns: repeat(1, 0.5fr);
+  }
+  .package {
+    border-bottom: 1px solid gray;
+  }
+  footer {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 330px;
+  }
+  .left-container {
+    width: 310px;
+    height: 130px;
+    padding-left: 6px;
+  }
+  .left-container h3 {
+    font-size: 52px;
+    font-weight: 800;
+  }
+  .middle-container {
+    margin-right: 112px;
+    height: 170px;
+  }
+  .right-container {
+    margin-right: 112px;
+    height: 170px;
+  }
+  footer hr {
+    width: 99%;
+  }
+  #copy-right {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: start;
+  }
 }
